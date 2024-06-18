@@ -1,0 +1,37 @@
+Obiettivo del Test
+Realizzare un'applicazione Desketop che comunichi con un "dispositivo virtuale" tramite porta seriale, simulando l'invio e la ricezione di dati. L'applicazione dovrà gestire la comunicazione in modo asincrono e rispondere a eventi specifici, modificando l'interfaccia utente in base ai dati ricevuti dal dispositivo.
+
+Requisiti Specifici
+Simulatore della Porta Seriale:
+
+Implementare uno script TypeScript che simuli un dispositivo hardware. Questo script, facendo uso di una libreria come serialport o una versione mock di essa, dovrebbe ascoltare i comandi inviati dall'applicazione Principale e rispondere con il comando ricevuto seguito da "+OK".
+
+Applicazione Principale:
+
+L'applicazione dovrà avere un'interfaccia utente composta da quattro cerchi di colore verde. Ogni cerchio, quando cliccato, invierà un comando LEDxy al dispositivo virtuale (Simulatore della Porta Seriale), dove x è l'indice del cerchio (1-4) e y è lo stato del LED (0 per OFF, 1 per ON).
+
+Alla ricezione della risposta <comandoRicevuto>+OK dal dispositivo virtuale, l'applicazione dovrà cambiare il colore del cerchio interessato in rosso se il LED è OFF, verde se il LED è ON.
+
+Dettagli Tecnici
+Simulatore della Porta Seriale
+Script TypeScript per il Dispositivo Virtuale: Creare uno script che simuli la comunicazione seriale, aspettandosi comandi specifici e rispondendo in modo appropriato. Questo script servirà a testare la capacità del candidato di implementare e gestire la comunicazione asincrona.
+
+Applicazione Principale
+Interfaccia Utente: Sviluppare un'interfaccia utente semplice ma efficace che permetta all'utente di interagire con il dispositivo virtuale tramite clic. L'UI dovrà riflettere lo stato del dispositivo in tempo reale.
+
+Comunicazione Seriale: Utilizzare Node.js e TypeScript per implementare la logica di comunicazione seriale, compresa la gestione di errori e timeout.
+
+Distribuzione
+Electorn: Fornire l'esguibile dell'applicazione principale per l'installazione su linux e window.
+
+PLUS: Container Docker: Fornire un Dockerfile per containerizzare l'applicazione, assicurandosi che sia eseguibile in un ambiente isolato e che il software riesca a comunicare in modo corretto con il serial port della macchina host. 
+
+Documentazione
+Guida e Spiegazioni: Preparare una documentazione dettagliata che spieghi il funzionamento dell'applicazione, le scelte architetturali, e fornisca istruzioni per eseguire l'applicazione sia localmente che in un container Docker.
+
+Valutazione
+I candidati saranno valutati sulla base della correttezza e della qualità del codice, dell'innovazione e creatività dimostrata nella soluzione dei problemi, e della completezza della documentazione fornita. L'obiettivo è identificare candidati che non solo possiedono solide competenze tecniche, ma che sono anche capaci di pensare in modo critico e creativo di fronte a problemi di ingegneria complessi.
+
+Consegnabile
+Il candidato dovrà fornire un repository Git contenente tutto il codice sorgente dell'applicazione, il Dockerfile, e la documentazione necessaria per comprendere, eseguire e testare l'applicazione.
+

@@ -1,0 +1,21 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LED Controller</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src = "renderer.js" type="text/javascript">
+   
+  </script>
+</head>
+<body>
+  <div id="led-container">
+    <button class="led-button" id="led1" data-status="OFF" value="LED OFF" data-led="1" data-color = "red" onclick="callback(this, 'led1')">
+  </button>
+    <button class="led-button" id="led2" data-status="OFF" value="LED OFF" data-led="2" data-color = "red"  onclick="callback(this, 'led2')"></button>
+    <button class="led-button" id="led3" data-status="OFF" value="LED OFF"data-led="3"data-color = "red" onclick="callback(this, 'led3')"></button>
+    <button class="led-button" id="led4" data-status="OFF" value="LED OFF"data-led="4" data-color = "red" onclick="callback(this, 'led4')"></button>
+  </div>
+</body>
+</html>

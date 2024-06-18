@@ -1,0 +1,31 @@
+/* styles.css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#led-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.led-button {
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+
+.led-button.green {
+  background-color: green;
+}

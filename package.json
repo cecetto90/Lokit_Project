@@ -1,0 +1,20 @@
+{
+  "name": "electron-serialport",
+  "productName": "electron-serialport",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "user",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "serialport": "12.0.0",
+    "tableify": "1.1.1",
+    "virtual-serialport": "4.0.1"
+  },
+  "devDependencies": {
+    "electron": "31.0.1"
+  }
+}
