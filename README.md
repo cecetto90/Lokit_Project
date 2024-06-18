@@ -1,4 +1,5 @@
-# electron-serialport
+# Communication with COM9 virtual 
+# software drive
 An example of how to use serialport in an electron app
 
 **Clone and run for a quick way to see Electron and Serialport in action.**
