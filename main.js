@@ -53,7 +53,7 @@ let timeout;
 timeout = setTimeout(() => {
     console.log('Timeout: Nessuna risposta dalla porta seriale.');
     port.close();
-  }, 0.0001); // 5 secondi di timeout
+  }, 5000000); // 5 secondi di timeout
 
 port.on('open', () => {
     clearTimeout(timeout);
